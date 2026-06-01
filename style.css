@@ -73,12 +73,19 @@ nav {
 .nav-links li + li { border-left: 1px solid var(--line); }
 
 /* ── PAGES ── */
-.page { display: none; min-height: 100vh; padding-top: 58px; animation: fadeUp 0.45s ease; }
-.page.active { display: block; }
+.page {
+  display: none;
+  min-height: 100vh;
+  padding-top: 58px;
+}
+.page.active {
+  display: block;
+  animation: fadeUp 0.4s ease both;
+}
 #home.active { display: flex; }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(12px); }
+  from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
@@ -91,7 +98,6 @@ nav {
   min-height: 100vh;
   padding: 58px 0 0;
 }
-.page.active:not(#home) { display: block; }
 
 .home-center {
   flex: 1;
@@ -247,13 +253,20 @@ nav {
   position: absolute;
   inset: 0;
   z-index: 0;
+  background: var(--bg3);
 }
 .alt-card-image img {
   width: 100%; height: 100%;
   object-fit: cover;
+  object-position: center center;
   display: block;
   filter: grayscale(20%) brightness(0.55);
   transition: filter 0.5s ease, transform 0.6s ease;
+}
+/* Wide/landscape images — show more of the image rather than cropping in */
+.alt-card-image img.img-wide {
+  object-fit: contain;
+  background: var(--bg3);
 }
 .alt-card:hover .alt-card-image img {
   filter: grayscale(0%) brightness(0.45);
