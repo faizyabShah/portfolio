@@ -75,6 +75,7 @@ nav {
 /* ── PAGES ── */
 .page { display: none; min-height: 100vh; padding-top: 58px; animation: fadeUp 0.45s ease; }
 .page.active { display: block; }
+#home.active { display: flex; }
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(12px); }
@@ -85,13 +86,12 @@ nav {
    HOME
 ══════════════════════════════════════ */
 #home {
-  display: none;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
   padding: 58px 0 0;
 }
-#home.active { display: flex; }
+.page.active:not(#home) { display: block; }
 
 .home-center {
   flex: 1;
