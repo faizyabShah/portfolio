@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faizyab Ali Shah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" onclick="showPage('home')">F.A.S</a>
+  <ul class="nav-links">
+    <li><a onclick="showPage('home')"         id="nav-home"         class="active">Home</a></li>
+    <li><a onclick="showPage('about')"        id="nav-about">About</a></li>
+    <li><a onclick="showPage('experience')"   id="nav-experience">Experience</a></li>
+    <li><a onclick="showPage('projects')"     id="nav-projects">Projects</a></li>
+    <li><a onclick="showPage('publications')" id="nav-publications">Publications</a></li>
+    <li><a onclick="showPage('contact')"      id="nav-contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HOME ══════════════════════════════════════ -->
+<div class="page" id="home">
+  <div class="home-center">
+    <h1 class="home-name">Faizyab<br><em>Ali Shah</em></h1>
+    <div class="home-sub">
+      <div class="home-sub-line">
+        <div class="home-sub-dot"></div>
+        <span>Erasmus Mundus IPCV</span>
+      </div>
+      <div class="home-sub-line">
+        <div class="home-sub-dot"></div>
+        <span>ML Researcher</span>
+      </div>
+      <div class="home-sub-line">
+        <div class="home-sub-dot"></div>
+        <span>Developer</span>
+      </div>
+    </div>
+  </div>
+  <div class="home-stats-bar">
+    <div class="home-stat">
+      <span class="home-stat-val">3.90</span>
+      <span class="home-stat-lbl">Bachelor's CGPA</span>
+    </div>
+    <div class="home-stat">
+      <span class="home-stat-val">4.94<small style="font-size:16px">/5</small></span>
+      <span class="home-stat-lbl">Master's GPA</span>
+    </div>
+    <div class="home-stat">
+      <span class="home-stat-val">1<sup style="font-size:15px">st</sup></span>
+      <span class="home-stat-lbl">Ranked in cohort of 120</span>
+    </div>
+    <div class="home-stat">
+      <span class="home-stat-val">IELTS 8</span>
+      <span class="home-stat-lbl">English Proficiency</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══════════════════════════════════════ -->
+<div class="page" id="about">
+  <div class="section-wrap">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-body">
+        <p>
+          I'm a Master's student in the <strong>Erasmus Mundus IPCV program</strong>, currently at Universidad Autónoma de Madrid. The program takes me through Budapest, Madrid, and Bordeaux.
+        </p>
+        <p>
+          My research focuses on <strong>diffusion-based semantic segmentation</strong> — using attention maps from LoRA-finetuned Stable Diffusion to produce segmentation labels without manual annotation, applied to the Cityscapes dataset.
+        </p>
+        <p>
+          I graduated as <strong>Gold Medalist</strong> at NUST Pakistan, ranked 1st in a cohort of 120+, and interned at RPTU Kaiserslautern in Germany on large-scale wheat phenology estimation from UAV and satellite imagery.
+        </p>
+      </div>
+      <div class="about-aside">
+        <div class="about-aside-row">
+          <div class="about-aside-label">Location</div>
+          <div class="about-aside-val">Madrid, Spain</div>
+        </div>
+        <div class="about-aside-row">
+          <div class="about-aside-label">Program</div>
+          <div class="about-aside-val">Erasmus Mundus IPCV<br>PPKE → UAM → UBx</div>
+        </div>
+        <div class="about-aside-row">
+          <div class="about-aside-label">Interests</div>
+          <div class="about-aside-val">Diffusion Models<br>Semantic Segmentation<br>Remote Sensing<br>Multimodal AI</div>
+        </div>
+        <div class="about-aside-row">
+          <div class="about-aside-label">Languages</div>
+          <div class="about-aside-val">Pashto — Native<br>Urdu — Professional<br>English — IELTS 8</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ EXPERIENCE ═════════════════════════════════ -->
+<div class="page" id="experience">
+  <div class="section-wrap" style="max-width:100%; padding: 4rem 0 6rem;">
+    <div style="max-width:820px; margin:0 auto; padding: 0 2.5rem;">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+    </div>
+
+    <div class="alt-cards">
+
+      <div class="alt-card">
+        <div class="alt-card-image">
+          <!-- TO ADD IMAGE: replace the placeholder below with:
+               <img src="YOUR_IMAGE_PATH" alt="Cowlar Design Studio"> -->
+          <div class="alt-card-image-placeholder"><span>Image</span></div>
+        </div>
+        <div class="alt-card-text">
+          <div class="card-eyebrow">Dec 2024 – Aug 2025 · Islamabad, Pakistan</div>
+          <div class="card-title">
+            Machine Learning Engineer
+            <span class="card-org">Cowlar Design Studio</span>
+          </div>
+          <div class="card-body">Built computer vision pipelines for industrial automation using YOLO-based detection and tracking models. Deployed and versioned models via FastAPI inference servers and MLflow. Collaborated with a US-based engineering team on fiber-optic cable assembly automation.</div>
+          <div class="card-tags">
+            <span class="card-tag">YOLO</span>
+            <span class="card-tag">FastAPI</span>
+            <span class="card-tag">MLflow</span>
+            <span class="card-tag">PyTorch</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="alt-card">
+        <div class="alt-card-image">
+          <!-- TO ADD IMAGE: <img src="YOUR_IMAGE_PATH" alt="RPTU"> -->
+          <div class="alt-card-image-placeholder"><span>Image</span></div>
+        </div>
+        <div class="alt-card-text">
+          <div class="card-eyebrow">Jul – Aug 2024 · Kaiserslautern, Germany</div>
+          <div class="card-title">
+            Research Intern
+            <span class="card-org">Robotics Research Lab, RPTU</span>
+          </div>
+          <div class="card-body">Developed deep learning pipelines for large-scale wheat phenology estimation using UAV and Sentinel-2 satellite imagery. Trained Vision Transformers (ViT) and LSTM architectures for crop growth stage prediction and yield estimation.</div>
+          <div class="card-tags">
+            <span class="card-tag">ViT</span>
+            <span class="card-tag">LSTM</span>
+            <span class="card-tag">Remote Sensing</span>
+            <span class="card-tag">Sentinel-2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="alt-card">
+        <div class="alt-card-image">
+          <!-- TO ADD IMAGE: <img src="YOUR_IMAGE_PATH" alt="MachVIS NUST"> -->
+          <div class="alt-card-image-placeholder"><span>Image</span></div>
+        </div>
+        <div class="alt-card-text">
+          <div class="card-eyebrow">Jun 2024 – May 2025 · Islamabad, Pakistan</div>
+          <div class="card-title">
+            Research Intern
+            <span class="card-org">MachVIS Lab, NUST</span>
+          </div>
+          <div class="card-body">Final year thesis: "Bridging UAV Precision and Satellite Scope for Advanced Large-Scale Phenology Estimation." Developed multimodal deep learning pipelines for agricultural monitoring combining UAV and satellite imagery.</div>
+          <div class="card-tags">
+            <span class="card-tag">UAV Imagery</span>
+            <span class="card-tag">Multimodal DL</span>
+            <span class="card-tag">PyTorch</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="alt-card">
+        <div class="alt-card-image">
+          <!-- TO ADD IMAGE: <img src="YOUR_IMAGE_PATH" alt="NUST RIC"> -->
+          <div class="alt-card-image-placeholder"><span>Image</span></div>
+        </div>
+        <div class="alt-card-text">
+          <div class="card-eyebrow">Aug – Dec 2023 · Islamabad, Pakistan</div>
+          <div class="card-title">
+            Research Assistant
+            <span class="card-org">Research Innovation &amp; Commercialization, NUST</span>
+          </div>
+          <div class="card-body">Built TensorFlow-based predictive models to estimate Web of Science journal metrics from Scopus data. Performed large-scale bibliometric data preprocessing and statistical correlation analysis.</div>
+          <div class="card-tags">
+            <span class="card-tag">TensorFlow</span>
+            <span class="card-tag">Python</span>
+            <span class="card-tag">Data Analysis</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══ PROJECTS ════════════════════════════════════ -->
+<div class="page" id="projects">
+  <div class="section-wrap" style="max-width:100%; padding: 4rem 0 6rem;">
+    <div style="max-width:820px; margin:0 auto; padding: 0 2.5rem;">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+    </div>
+
+    <div class="alt-cards">
+
+      <div class="alt-card">
+        <div class="alt-card-image">
+          <!-- TO ADD IMAGE: <img src="YOUR_IMAGE_PATH" alt="LoRA-SD project"> -->
+          <div class="alt-card-image-placeholder"><span>Image</span></div>
+        </div>
+        <div class="alt-card-text">
+          <span class="card-badge">Ongoing · 2025</span>
+          <div class="card-title">LoRA-SD Scene Generation &amp; Auto-Segmentation</div>
+          <div class="card-body">Diffusion-based pipeline for generating urban driving scenes with automatic semantic segmentation via cross-attention maps. LoRA fine-tuning on Stable Diffusion for Cityscapes-style domain adaptation. Benchmarking synthetic vs. real data training regimes using mIoU.</div>
+          <div class="card-tags">
+            <span class="card-tag">Stable Diffusion</span>
+            <span class="card-tag">LoRA</span>
+            <span class="card-tag">OVAM</span>
+            <span class="card-tag">Cityscapes</span>
+            <span class="card-tag">PyTorch</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="alt-card">
+        <div class="alt-card-image">
+          <!-- TO ADD IMAGE: <img src="YOUR_IMAGE_PATH" alt="Fusion RAG"> -->
+          <div class="alt-card-image-placeholder"><span>Image</span></div>
+        </div>
+        <div class="alt-card-text">
+          <span class="card-badge">Published · 2025</span>
+          <div class="card-title">Fusion RAG for Regulatory QA</div>
+          <div class="card-body">Hybrid retrieval-augmented generation combining dense FAISS vector search with lexical BM25 retrieval. Integrated GPT-4, Llama 3, and Mistral for context-aware regulatory question answering. Published at REG-NLP, COLING 2025.</div>
+          <div class="card-tags">
+            <span class="card-tag">FAISS</span>
+            <span class="card-tag">BM25</span>
+            <span class="card-tag">GPT-4</span>
+            <span class="card-tag">Llama 3</span>
+          </div>
+          <a class="card-link" href="https://coling-2025-proceedings.s3.us-east-1.amazonaws.com/workshops/RegNLP-2025/pdf/2025.regnlp2025-1.12.pdf" target="_blank">Read Paper ↗</a>
+        </div>
+      </div>
+
+      <div class="alt-card">
+        <div class="alt-card-image">
+          <!-- TO ADD IMAGE: <img src="YOUR_IMAGE_PATH" alt="VQA VizWiz"> -->
+          <div class="alt-card-image-placeholder"><span>Image</span></div>
+        </div>
+        <div class="alt-card-text">
+          <div class="card-eyebrow">2024</div>
+          <div class="card-title">Visual Question Answering on VizWiz</div>
+          <div class="card-body">Multimodal VQA system for answering natural-language questions about images in the VizWiz benchmark. Leveraged OpenAI CLIP for joint image-text representation. Achieved 68% accuracy.</div>
+          <div class="card-tags">
+            <span class="card-tag">CLIP</span>
+            <span class="card-tag">PyTorch</span>
+            <span class="card-tag">Multimodal</span>
+          </div>
+          <a class="card-link" href="https://github.com/faizyabShah/VisualQA" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="alt-card">
+        <div class="alt-card-image">
+          <!-- TO ADD IMAGE: <img src="YOUR_IMAGE_PATH" alt="Aerial Segmentation"> -->
+          <div class="alt-card-image-placeholder"><span>Image</span></div>
+        </div>
+        <div class="alt-card-text">
+          <div class="card-eyebrow">2023</div>
+          <div class="card-title">Semantic Segmentation of Aerial Imagery</div>
+          <div class="card-body">U-Net with ResNet-34 backbone for pixel-wise segmentation of aerial scenes — roads, buildings, vegetation, water bodies. 85% segmentation accuracy on benchmark data.</div>
+          <div class="card-tags">
+            <span class="card-tag">U-Net</span>
+            <span class="card-tag">ResNet-34</span>
+            <span class="card-tag">TensorFlow</span>
+            <span class="card-tag">OpenCV</span>
+          </div>
+          <a class="card-link" href="https://github.com/faizyabShah/semanticSegmentation/" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="alt-card">
+        <div class="alt-card-image">
+          <!-- TO ADD IMAGE: <img src="YOUR_IMAGE_PATH" alt="Image Colorization"> -->
+          <div class="alt-card-image-placeholder"><span>Image</span></div>
+        </div>
+        <div class="alt-card-text">
+          <div class="card-eyebrow">2023</div>
+          <div class="card-title">Grayscale Image Colorization</div>
+          <div class="card-body">Encoder-decoder CNN for automatic colorization in LAB color space. Preprocessing pipeline with contrast enhancement and noise reduction. 85% test accuracy on held-out data.</div>
+          <div class="card-tags">
+            <span class="card-tag">TensorFlow</span>
+            <span class="card-tag">Keras</span>
+            <span class="card-tag">LAB Color Space</span>
+          </div>
+          <a class="card-link" href="https://github.com/faizyabShah/imageColorization/" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══ PUBLICATIONS ════════════════════════════════ -->
+<div class="page" id="publications">
+  <div class="section-wrap">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Publications</h2>
+    </div>
+    <div>
+      <div class="pub-item">
+        <div>
+          <div class="pub-venue">REG-NLP Workshop · COLING 2025</div>
+          <div class="pub-title">Fusion RAG for Bridging Lexical and Semantic Retrieval and Question Answering</div>
+          <div class="pub-desc">Hybrid retrieval framework combining dense FAISS semantic search with lexical BM25 retrieval. Context passed to GPT-4, Mistral, and Llama 3 for accurate regulatory question answering.</div>
+          <a class="pub-link" href="https://coling-2025-proceedings.s3.us-east-1.amazonaws.com/workshops/RegNLP-2025/pdf/2025.regnlp2025-1.12.pdf" target="_blank">Read Paper ↗</a>
+        </div>
+        <div class="pub-year">2025</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CONTACT ═════════════════════════════════════ -->
+<div class="page" id="contact">
+  <div class="section-wrap">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Contact</h2>
+    </div>
+    <div class="contact-top">
+      <div class="contact-title">Let's<br><em>talk.</em></div>
+      <p class="contact-sub">Open to research collaborations, industry roles, and conversations about vision and learning.</p>
+      <a class="btn-fill" href="mailto:faizyabshah0123@gmail.com">Send an Email ↗</a>
+    </div>
+    <div class="contact-rows">
+      <a class="contact-row" href="mailto:faizyabshah0123@gmail.com">
+        <span class="contact-row-type">Email</span>
+        <span class="contact-row-label">faizyabshah0123@gmail.com</span>
+        <span class="contact-row-arrow">↗</span>
+      </a>
+      <a class="contact-row" href="https://linkedin.com/in/faizyabalishah" target="_blank">
+        <span class="contact-row-type">LinkedIn</span>
+        <span class="contact-row-label">linkedin.com/in/faizyabalishah</span>
+        <span class="contact-row-arrow">↗</span>
+      </a>
+      <a class="contact-row" href="https://github.com/faizyabShah" target="_blank">
+        <span class="contact-row-type">GitHub</span>
+        <span class="contact-row-label">github.com/faizyabShah</span>
+        <span class="contact-row-arrow">↗</span>
+      </a>
+      <span class="contact-row">
+        <span class="contact-row-type">Phone</span>
+        <span class="contact-row-label">+34 675 462 021</span>
+        <span class="contact-row-arrow" style="opacity:0">↗</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Faizyab Ali Shah · Madrid, Spain</span>
+  <span>© 2025</span>
+</footer>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.getElementById('nav-' + id).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
